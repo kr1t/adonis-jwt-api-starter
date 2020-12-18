@@ -33,7 +33,8 @@
     "cloudinary": "^1.11.0",
     "esm": "^3.2.25",
     "gravatar": "^1.6.0",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "url-parse": "^1.4.7"
   },
   "devDependencies": {},
   "autoload": {
