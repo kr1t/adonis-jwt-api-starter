@@ -17,9 +17,9 @@
 |     Make sure to pass relative path from the project root.
 */
 
+// Set options as a parameter, environment variable, or rc file.
+require = require('esm')(module /*, options*/)
+
 const { Ignitor } = require('@adonisjs/ignitor')
 
-new Ignitor(require('@adonisjs/fold'))
-  .appRoot(__dirname)
-  .fireHttpServer()
-  .catch(console.error)
+new Ignitor(require('@adonisjs/fold')).appRoot(__dirname).fireHttpServer().catch(console.error)

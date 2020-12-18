@@ -5,7 +5,7 @@
   "description": "Adonisjs boilerplate for API server with pre-configured JWT AUTH and VueJS as frontend",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "cross-env NODE_ENV=testing nodemon --watch app --watch start --watch config --watch .env.testing -r esm server.js",
     "test": "node ace test"
   },
   "keywords": [
@@ -13,7 +13,7 @@
     "adonis-app",
     "adonisjs vuejs"
   ],
-  "author": "Amit Kumar Khare",
+  "author": "Arm Krit",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
@@ -27,11 +27,13 @@
     "@adonisjs/lucid": "^5.0.3",
     "@adonisjs/mail": "^3.0.5",
     "@adonisjs/validator": "^5.0.3",
+    "@line/bot-sdk": "^7.2.0",
     "axios": "^0.18.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "cloudinary": "^1.11.0",
+    "esm": "^3.2.25",
     "gravatar": "^1.6.0",
-    "mysql": "^2.15.0",
-    "sqlite3": "^4.0.0"
+    "mysql": "^2.15.0"
   },
   "devDependencies": {},
   "autoload": {
