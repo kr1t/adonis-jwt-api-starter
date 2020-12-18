@@ -5,7 +5,7 @@
   "description": "Adonisjs boilerplate for API server with pre-configured JWT AUTH and VueJS as frontend",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=testing nodemon --watch app --watch start --watch config --watch .env.testing -r esm server.js",
+    "start": "node server.js",
     "test": "node ace test"
   },
   "keywords": [
